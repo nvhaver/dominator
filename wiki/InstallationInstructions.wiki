@@ -1,0 +1,41 @@
+#labels Install
+What to do to install DOMinator:
+
+1. download Windows (http://www.wisec.it/testDom/XX_win.zip) and/or
+Linux (http://www.wisec.it/testDom/XX_Lin.zip) version of DOMinator
+(based on FF 3.6.13). 
+If you have a MacOsx there no version yet, sorry.
+
+2. unzip the zip with the password  4dd4457b-aed9-4ab4-8472-2a4b07656ff4
+and save it in a directory:
+Ex DOMinatorBin.
+2.
+  a If linux: Enter in the DOMinatorBin directory and launch:
+      ./firefox -P DOMinatorProfile -NO-REMOTE 
+      this will create a new profile.
+  b. if Windows create a link named DOMinator containing 
+       ./firefox -P  DOMinatorProfile -NO-REMOTE 
+      and double click it.
+
+3. install at least Firebug (v 1.6.2) (I use also web developer and
+firecookie but you know better than me what's useful =).
+
+4. install attached xpi.
+
+5. open Firebug and set it "On" on any page. 
+
+6. Have a look at the attached image. 
+
+7. go for example to http://www.aol.com or http://www.leboncoin.fr/  and
+see what it says.
+
+8. Remember that since firefox sets the default profile as the last one,
+the default one will always be launched using firefox -P default
+-NO-REMOTE  (but you already know that:).
+
+9. Read the pdf document for some insightful help.
+
+
+As a side note consider that there are still some issues I hope to fix,
+like doing some kind of rebranding to solve those -P issues on original
+firefox.
