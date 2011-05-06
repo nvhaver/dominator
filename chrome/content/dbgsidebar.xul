@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css" ?>
+<?xml-stylesheet href="chrome://domintruder/skin/sidebar.css" type="text/css" ?>
+<!DOCTYPE window SYSTEM "chrome://domintruder/locale/dbgsidebar.dtd">
+
+<window id="sbDbgSidebar" title="&dbgsidebar.title;"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"   onload="DOMISidebar.load(event)"  onunload="DOMISidebar.unload(event)">
+  <script src="DOMISidebar.js" />
+ 
+  <vbox style='border: 1px solid; height: 500px;'>
+    <button  oncommand="DOMISidebar.deleteContent();" label="Clear"/>
+    <iframe style='border: 1px solid; height: 450px;' src="" id="logViewer" /> 
+    <iframe style='border: 1px solid; height: 300px;' src="" id="sinkViewer" /> 
+  </vbox>
+</window>

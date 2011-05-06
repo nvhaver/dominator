@@ -1,0 +1,7 @@
+body{font-size:small}
+#value{background-color: black;color: pink;}
+#Obj{background-color: white;}
+#Getter{background-color:  darkgreen;color: white;}
+#Flow{background-color: white;color: black;}
+#Setter{background-color: blue;color: white;}#Sink{background-color: red;color: black}
+#callstack{border:1px solid}
