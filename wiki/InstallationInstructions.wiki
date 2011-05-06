@@ -13,7 +13,7 @@
        ./firefox -P  DOMinatorProfile -NO-REMOTE 
       and double click it.
 }}}
- # install at least Firebug (v 1.6.2) (I use also web developer and Firecookie).
+ # install at least [https://addons.mozilla.org/en-us/firefox/addon/firebug/versions/?page=1#version-1.6.2 Firebug] (v 1.6.2) (I use also web developer and Firecookie).
  # Download and install the Dominator [http://code.google.com/p/dominator/downloads/detail?name=dominator-0.9.0.1.xpi&can=2&q= Extension].
  # open Firebug and set it "On" on any page. 
  # Have a look at the attached image. 
