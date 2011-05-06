@@ -1,0 +1,44 @@
+<?xml version="1.0"?><overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ 
+    <script src="chrome://domintruder/content/domidebugger.js" type="application/x-javascript"/>
+    <script src="chrome://domintruder/content/DOMIntruderFB.js" type="application/x-javascript"/>
+
+  <commandset id="mainCommandSet">
+        <command id="cmd_hwDILogToggleButton" oncommand="Firebug.DOMIntruder.DOMIModel.onLogToggleDOMIntruderLog(event)"/>
+        <command id="cmd_hwDILogCookieToggleButton" oncommand="Firebug.DOMIntruder.DOMIModel.onLogCookiesToggleDOMIntruderLog(event)"/>
+        <command id="cmd_hwDILogStackToggleButton" oncommand="Firebug.DOMIntruder.DOMIModel.onLogStackTraceToggleDOMIntruderLog(event)"/>
+        <command id="cmd_hwDICookieDirectToggleButton" oncommand="Firebug.DOMIntruder.DOMIModel.onCookieIsDirectSourceToggleDOMIntruderLog(event)"/>
+        <command id="cmd_hwDIClearButton" oncommand="Firebug.DOMIntruder.DOMIModel.onClearDOMIntruderLog(FirebugContext)"/>
+        <command id="cmd_hwDIButton" oncommand="Firebug.DOMIntruder.DOMIModel.onFilterButton(FirebugContext)"/>
+        <command id="cmd_hwDIEventsButton" oncommand="Firebug.DOMIntruder.DOMIModel.onGetEventsButton(FirebugContext)"/>
+    </commandset>  
+
+    <toolbar id="fbToolbar" align="center">
+        <hbox id="fbToolbarInner" insertbefore="fbDetachButton" flex="1" align="center">
+            <hbox id="fbDIButtons" insertafter="fbNetButtons">
+                <toolbarseparator/>
+                <toolbarbutton id="hwLogToggleDIToolbarButton" type="checkbox"
+                    label="Log Enabled" class="toolbar-text-button"
+                    tooltiptext="Toggle logging" command="cmd_hwDILogToggleButton"/>
+                <toolbarbutton id="hwClearDIToolbarButton"
+                    label="Clear" class="toolbar-text-button"
+                    tooltiptext="Clear Log view" command="cmd_hwDIClearButton"/>
+ <!--               <toolbarbutton id="hwDIToolbarButton"
+                    label="Filter" class="toolbar-text-button"
+                    tooltiptext="Opens filtering dialog" command="cmd_hwDIButton"/>
+                <toolbarbutton id="hwDIToolbarButton"
+                    label="GetEvents" class="toolbar-text-button"
+                    tooltiptext="Get Events for each element in page" command="cmd_hwDIEventsButton"/>-->
+                <toolbarbutton id="hwLogToggleDICookieToolbarButton" type="checkbox"
+                    label="Log Cookies Enabled" class="toolbar-text-button"
+                    tooltiptext="Cookies" command="cmd_hwDILogCookieToggleButton"/>
+                <toolbarbutton id="hwLogToggleDIStackToolbarButton" type="checkbox"
+                    label="Stack Trace Enabled" class="toolbar-text-button"
+                    tooltiptext="Stack Trace (enabling it will give slow preformances)" command="cmd_hwDILogStackToggleButton"/>
+    <!--            <toolbarbutton id="hwLogToggleDIToolbarButton" type="checkbox"
+                    label="Cookie Direct" class="toolbar-text-button"
+                    tooltiptext="Cookies" command="cmd_hwDICookieDirectToggleButton"/>-->
+           </hbox>
+       </hbox>
+    </toolbar>
+</overlay>

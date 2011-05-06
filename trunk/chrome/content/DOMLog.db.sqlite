@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS DomLog  (id INTEGER PRIMARY KEY, contextId INTEGER , logId INTEGER, 
+                                    time DATE DEFAULT (CURRENT_TIMESTAMP),type TEXT,value TEXT, loc TEXT, 
+                                    target TEXT, callstack TEXT, sources TEXT);
+

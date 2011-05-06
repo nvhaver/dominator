@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://domintruder/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://domintruder/locale/dbgsidebar.dtd">
+<overlay id="test-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script>
+<![CDATA[
+ if(!String.newTainted){
+  alert("This profile is for DOMInator only and this \n\
+is not a DOMinator instance.\n\
+Be sure to run your standard firefox with -P default\n\
+or, if you don't have a Firefox DOMinator Version");
+/*   		  const nsIAppStartup = Components.interfaces.nsIAppStartup;
+		  // Notify all windows that an application quit has been requested.
+		  var os = Components.classes["@mozilla.org/observer-service;1"]
+							 .getService(Components.interfaces.nsIObserverService);
+		  var cancelQuit = Components.classes["@mozilla.org/supports-PRBool;1"]
+									 .createInstance(Components.interfaces.nsISupportsPRBool);
+		  os.notifyObservers(cancelQuit, "quit-application-requested", null);
+		  // Something aborted the quit process. 
+		  if (!cancelQuit.data){
+			 
+		  // Notify all windows that an application quit has been granted.
+		  os.notifyObservers(null, "quit-application-granted", null);
+		  // Enumerate all windows and call shutdown handlers
+		  var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
+							 .getService(Components.interfaces.nsIWindowMediator);
+		  var windows = wm.getEnumerator(null);
+		  while (windows.hasMoreElements()) {
+			var win = windows.getNext();
+			if (("tryToClose" in win) && !win.tryToClose())
+			 break;
+		  }
+		  Components.classes["@mozilla.org/toolkit/app-startup;1"].getService(nsIAppStartup)
+					.quit(nsIAppStartup.eForceQuit | nsIAppStartup.eAttemptQuit);
+                                        }*/
+	 
+ }
+ if(!Firebug)
+  alert("Firebug is not Installed\n Install Firebug in order to run DOMinator Monitor");
+ ]]>
+</script>
+ <script src="overlay.js"/>
+ <script src="utils.js"/>
+
+  <statusbar id="status-bar">
+   <statusbarpanel 
+     label="DomIntruder"  tooltiptext="DOMinator"
+      
+    ><image id="DomIntruder" style="width: 20px;height:20px" src="chrome://domintruder/skin/hal.png" onclick="DOMinatorStart.toggle(event);"  /></statusbarpanel>
+ </statusbar>
+
+</overlay>

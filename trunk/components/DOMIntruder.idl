@@ -1,0 +1,20 @@
+//                                                                                             
+// This code is part of DOMinator extension
+// @Copyright Stefano.dipaola@mindedsecurity.com
+// This code is copyrighted
+//
+#include "nsISupports.idl"
+#include "domstubs.idl"
+/*
+SDK="/media/DATA/ff3.6/mozilla/ff-taint/dist/" ; ${SDK}/bin/xpidl -m typelib -w -v -I ${SDK}/idl -e DOMIntruder.xpt DOMIntruder.idl
+*/
+[scriptable, uuid(b450449f-e215-40d9-b550-c1b8479a4dbf)]
+interface nsIDOMIntruder : nsISupports
+{
+  string go(in nsIDOMWindow win);
+  string logMe(in DOMString str);
+  string log( in DOMString str,in nsIDOMWindow win );
+  readonly attribute boolean wantCookies;
+  readonly attribute boolean wantStackTrace;
+
+};  
