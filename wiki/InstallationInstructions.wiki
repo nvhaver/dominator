@@ -1,5 +1,7 @@
 #labels Install
-What to do to install DOMinator:
+==What to do to install DOMinator==
+
+*WARNING:* This is a beta release. Don't install if you don't know what you're doing! If you really want to install it read all the instruction below!
 
 1. download Windows (http://www.wisec.it/testDom/XX_win.zip) and/or
 Linux (http://www.wisec.it/testDom/XX_Lin.zip) version of DOMinator
@@ -18,7 +20,7 @@ Ex DOMinatorBin.
       and double click it.
 
 3. install at least Firebug (v 1.6.2) (I use also web developer and
-firecookie but you know better than me what's useful =).
+Firecookie).
 
 4. install attached xpi.
 
@@ -29,12 +31,16 @@ firecookie but you know better than me what's useful =).
 7. go for example to http://www.aol.com or http://www.leboncoin.fr/  and
 see what it says.
 
-8. Remember that since firefox sets the default profile as the last one,
-the default one will always be launched using firefox -P default
--NO-REMOTE  (but you already know that:).
+8. Remember that since Firefox sets the default profile as the last one,
+the default one will always be launched using:
+{{{
+firefox -P default -NO-REMOTE
+}}}
+*all the Firefox links must be updated with the previous arguments*
 
-9. Read the pdf document for some insightful help.
+9. Read the [http://code.google.com/p/dominator/downloads/detail?name=DOMinator_Control_Flow.pdf&can=2&q= pdf] document for architecture description.
 
+10. See the troubleshooting page for minimal recovering if you did some error.
 
 As a side note consider that there are still some issues I hope to fix,
 like doing some kind of rebranding to solve those -P issues on original
