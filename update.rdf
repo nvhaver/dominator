@@ -7,9 +7,9 @@
                    em:minVersion="3.5"
                    em:maxVersion="3.6.*"
                    em:updateLink="http://dominator.googlecode.com/files/dominator-0.9.0.3.xpi"
-                   em:updateHash="sha1:2117fa9e734b6011da7e8177abf4b4690f40e361" />
+                   em:updateHash="sha1:340cf3c6e60488f7c550dfa20e4d8843a9969f7e" />
   <RDF:Description RDF:about="urn:mozilla:extension:domintruder@mindedsecurity.com"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAHV/X0Sr0ruAqqbgvipm1jlsH5qn62HsLHQf6IZVYJB3hbM4cP8KZpKymCWC2zzs4T5f+Jd7aIA/C81Ohuq0CyWJYBD0bhytYiZM+xDLuWRBYur56K5qZPvwNw2bkwYTycATOopEATYTxe5bQ950WMfI5CV4daeOI8rW0D+3wloP">
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAOM1h5VMNUOaC4sySjmQrsydahCVQDB/VuMW3+uHwFO/9nlKZamRK3is4ye/d1zmqk5d4UkmlU59AalS0DGhC9giBfebT65K2t9ncgn3BvI9MOuxFV8E6SP0rWbSucLIoshV+Hqx6TN+zzcni/vdDw7hB84wSig8Yj/wcPXQn3i5">
     <em:updates RDF:resource="rdf:#$FTIqK"/>
   </RDF:Description>
   <RDF:Seq RDF:about="rdf:#$FTIqK">
