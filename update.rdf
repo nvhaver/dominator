@@ -6,17 +6,17 @@
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.5"
                    em:maxVersion="3.6.*"
-                   em:updateLink="https://dominator.googlecode.com/files/dominator-0.9.0.2.xpi"
+                   em:updateLink="http://dominator.googlecode.com/dominator-0.9.0.3.xpi"
                    em:updateHash="sha1:2117fa9e734b6011da7e8177abf4b4690f40e361" />
   <RDF:Description RDF:about="urn:mozilla:extension:domintruder@mindedsecurity.com"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBANtgyjTRzC5nIlPMKvW7aw4sgKNOZGRiMC4FGaMOzsgWrQcaf0+IxkfrdBlt8olOxsnw0FnqM3FHLT7pqkTXxD+DgQ4WuTlOkA5njlbPfVGoZl6/ChOWTO51B8gr0gSG7So/d2+xIJFGx3EDqGaevQPAL/d1FRYotrVG8H88f6kc">
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBACe95dxH0iohe3Ls4gtjGvqxkbs845Guk+FDZJbAedZFZcbFUsyFGGyZZA8o156GOoy1oJsB3UuC0YG564jl55u7RCkT2DSeTVHOSw50Kjg1bfSAcUK/45FKpwdMjjKfC8U3ey84PJ9MY2wW4+2bmRmf6WRyHBiAcCenjGljRCeh">
     <em:updates RDF:resource="rdf:#$FTIqK"/>
   </RDF:Description>
   <RDF:Seq RDF:about="rdf:#$FTIqK">
     <RDF:li RDF:resource="rdf:#$GTIqK"/>
   </RDF:Seq>
   <RDF:Description RDF:about="rdf:#$GTIqK"
-                   em:version="0.9.0.2">
+                   em:version="0.9.0.3">
     <em:targetApplication RDF:resource="rdf:#$JTIqK"/>
   </RDF:Description>
 </RDF:RDF>
