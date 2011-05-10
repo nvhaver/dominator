@@ -5,7 +5,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="domintruder@mindedsecurity.com"
                    em:name="DOMinator"
-                   em:version="0.9.0.1"
+                   em:version="0.9.0.4"
                    em:creator="Stefano Di Paola"
                    em:type="2"
                    em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDpEj+WWXe2tEmynpYQkLtTeHs8nCcOwDDNvCtacP9O7WXVR8IoN8zcGtZVFsq2NDFiobAYldSjdmCoi2+VJsqXHTfJLj0V2gfok466nBNmo9QW3xJieXaVK/IwFX/96qxPHLasAUK1xNHgBFLKBxDXaiYTjxenj6cgJ6108pwLqQIDAQAB">
