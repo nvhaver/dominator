@@ -6,7 +6,7 @@
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="3.5"
                    em:maxVersion="3.6.*"
-                   em:updateLink="http://dominator.googlecode.com/dominator-0.9.0.3.xpi"
+                   em:updateLink="http://dominator.googlecode.com/files/dominator-0.9.0.3.xpi"
                    em:updateHash="sha1:2117fa9e734b6011da7e8177abf4b4690f40e361" />
   <RDF:Description RDF:about="urn:mozilla:extension:domintruder@mindedsecurity.com"
                    em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBACe95dxH0iohe3Ls4gtjGvqxkbs845Guk+FDZJbAedZFZcbFUsyFGGyZZA8o156GOoy1oJsB3UuC0YG564jl55u7RCkT2DSeTVHOSw50Kjg1bfSAcUK/45FKpwdMjjKfC8U3ey84PJ9MY2wW4+2bmRmf6WRyHBiAcCenjGljRCeh">
