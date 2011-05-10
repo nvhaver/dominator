@@ -5,39 +5,7 @@
 // @Copyright Stefano.dipaola@mindedsecurity.com
 // This code is copyrighted
 //
-// Lista di Todo urgenti:
-// 1.capire come mai l'help di vmware ha l'eccezione sul firefox compilato
-//   ..visto che il firefox ubuntu non la da'...  
-// manca:  window.open()
-// 
-// Le regexp non sono ancora tainted.  var match = taintedVar.match(/([^?#]*)(#.*)?$/);
 
-/** 
-Non e' possibile prendere cose come
-fromCharCode(Num, num)
-dove num e' preso da una qualche stringa tainted...
-charAt
-charCodeAt
-***** Da provare  
-
-*/
-/**
- navigate IE.. to DO
-
-**/
-
-/** 
-Note Varie, capire se si puo' fare qualcosa sui Css. Es.
-setter sul CssText etc capendo se e' tainted il valore.
-Forse ma forse gli eventlistener dal momento che viene creato anche attraverso una stringa?
-
-Ci sono da definire tutti i setter per le funzioni wrappate viwsto che 
-il Js potrebbe cercare di ridefinirle.. :(
-
-Onthrow : To do similar coding as on createScript to catch Event, Top-Level and eval stuff 
-Nota:
-Interessante la cosa del CaptureEvents ReleaseEvents routeEvent
-**/
  
 ___domIntruderDXUI=function ___domIntruderDXUI(dbg){
  
@@ -145,7 +113,7 @@ HTMLDocument.prototype.write = function(str){
     dump=function(){} */
      var str1 = str
      if(arguments.length>1){ 
-        for(var i=0,ll=arguments.length;i<ll;i++)
+        for(var i=1,ll=arguments.length;i<ll;i++)
         str1+=arguments[i];  
      }
      if(str1.toString().tainted){
@@ -159,7 +127,7 @@ HTMLDocument.prototype.writeln = function(str){
     dump=function(){} */
      var str1 = str
      if(arguments.length>1){
-        for(var i=0,ll=arguments.length;i<ll;i++)
+        for(var i=1,ll=arguments.length;i<ll;i++)
         str1+=arguments[i];  
      }
       if(str1.toString().tainted){
@@ -347,7 +315,7 @@ __domIntruderObj._domIntruderDebugDom = {
                               */
                           HTMLDocument.prototype.getElementById=(function(r){return function(a){
                                   if(typeof a=="string" && a.tainted){ 
-                                       __domIntruderObj.__domIntruderui.log("Sink","getDocumentById("+a+")", a , __domIntruderObj._domIntruderUtil.getCallStack(arguments));
+                                       __domIntruderObj.__domIntruderui.log("Getter","getDocumentById("+a+")", a , __domIntruderObj._domIntruderUtil.getCallStack(arguments));
                                      } 
                             return r.apply(this,[a]);
                           }})(HTMLDocument.prototype.getElementById)
@@ -805,7 +773,7 @@ __domIntruderObj._domIntruderDebugDom = {
                   };
                document.documentURI getter= function(){
                    var s=Components.lookupMethod(document, "documentURI")();
-                   s=String.newTainted( (s),"documentURI");
+                   s=String.newTainted((s),"documentURI");
                    if(__domIntruderObj._domIntruderDebugDom.logGetters )
                      if(__domIntruderObj._domIntruderUtil.isToBeLogged(arguments))
                        __domIntruderObj.__domIntruderui.log("Getter","documentURI",s , __domIntruderObj._domIntruderUtil.getCallStack(arguments));
@@ -828,7 +796,7 @@ __domIntruderObj._domIntruderDebugDom = {
         //Referrer
                document.referrer getter= function(){
                    var s=Components.lookupMethod(document, "referrer")();
-                   s=String.newTainted(/*s*/"http://vvva.example.com/uuid=aui\">aa?p=aaa","referrer");
+                   s=String.newTainted(/*s*/"http://www.fakereferrerdominator.com/referrerPathName?RefParName=RefValue","referrer");
                    if(__domIntruderObj._domIntruderDebugDom.logGetters )
                      if(__domIntruderObj._domIntruderUtil.isToBeLogged(arguments))
                         __domIntruderObj.__domIntruderui.log("Getter","document.referrer",s ,__domIntruderObj._domIntruderUtil.getCallStack(arguments));
@@ -875,7 +843,7 @@ __domIntruderObj._domIntruderDebugDom = {
                        // FixMe find another way. this add ____obj to window.document
                      
                         toString: function(){
-                           var hr=String.newTainted(   unescape(Components.lookupMethod(Components.lookupMethod(window,"location")(),"href")()),"location.toString");
+                           var hr=String.newTainted( (Components.lookupMethod(Components.lookupMethod(window,"location")(),"href")()),"location.toString");
                            if(__domIntruderObj._domIntruderDebugDom.logGetters )
                              if(__domIntruderObj._domIntruderUtil.isToBeLogged(arguments))
                                  __domIntruderObj.__domIntruderui.log("Getter","location.toString", hr, __domIntruderObj._domIntruderUtil.getCallStack(arguments));
@@ -883,7 +851,7 @@ __domIntruderObj._domIntruderDebugDom = {
                         },
                        get href(){
                         try{
-                            var hr=String.newTainted(  unescape(a.href),"location.href");
+                            var hr=String.newTainted((a.href),"location.href");
                             if(__domIntruderObj._domIntruderDebugDom.logGetters )
                              if(__domIntruderObj._domIntruderUtil.isToBeLogged(arguments))
                                __domIntruderObj.__domIntruderui.log("Getter","location.href", hr, __domIntruderObj._domIntruderUtil.getCallStack(arguments));
@@ -903,7 +871,7 @@ __domIntruderObj._domIntruderDebugDom = {
                                if(true){
                                    aa=aa?aa:"#zzzzzz=yyyyy";
                                }
-                               var hr=String.newTainted(  unescape(aa),"location.hash");
+                               var hr=String.newTainted( (aa),"location.hash");
                                if(__domIntruderObj._domIntruderDebugDom.logGetters )
                                  if(__domIntruderObj._domIntruderUtil.isToBeLogged(arguments))
                                     __domIntruderObj.__domIntruderui.log("Getter","location.hash",hr, __domIntruderObj._domIntruderUtil.getCallStack(arguments));
@@ -960,7 +928,7 @@ __domIntruderObj._domIntruderDebugDom = {
                            },
                        get search(){
                                var aa=a.search; 
-                               var hr=String.newTainted(unescape(aa?aa:"?aaaa=bbbb\">ss&ccc=dddd&11111=22222"),"location.search");
+                               var hr=String.newTainted( (aa?aa:"?aaaa=bbbb\">ss&ccc=dddd&11111=22222"),"location.search");
 
                                if(__domIntruderObj._domIntruderDebugDom.logGetters )
                                  if(__domIntruderObj._domIntruderUtil.isToBeLogged(arguments))
