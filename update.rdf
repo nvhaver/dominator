@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:extension:domintruder@mindedsecurity.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAM0MToVMtUUWAzfIk4RUbU85mUV+9r8X51KlvtDbU5XBXDy8e5EykDV6xe5dgVsqdmHmhivBxxxmTIkXWV0sS5g/mxzod0T2Qz/ydMKY2w9Rvihr46LsM/a0BcGTn6+whlGVwarK2n6SXoKXpsztiB0eIhQ8MqoEGQthSXh3cbIN">
+    <em:updates RDF:resource="rdf:#$FTIqK"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="rdf:#$FTIqK">
+    <RDF:li RDF:resource="rdf:#$GTIqK"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="rdf:#$GTIqK"
+                   em:version="0.9.0.2">
+    <em:targetApplication RDF:resource="rdf:#$JTIqK"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$JTIqK"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.5"
+                   em:maxVersion="3.6.*"
+                   em:updateLink="https://dominator.googlecode.com/files/dominator-0.9.0.2.xpi"
+                   em:updateHash="sha1:0cdaaaaf1fa9978151367853c916072593cee174"
+                   />
+</RDF:RDF>
