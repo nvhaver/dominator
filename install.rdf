@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
- xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-  <Description about="urn:mozilla:install-manifest">
-    <em:id>domintruder@mindedsecurity.com</em:id>
-    <em:name>DOMinator</em:name>
-    <em:version>1.0</em:version>
-    <em:creator>Stefano Di Paola</em:creator>
-    <em:type>2</em:type>
-    <em:targetApplication>
-      <Description>
-        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- firefox -->
-        <em:minVersion>1.5</em:minVersion>
-        <em:maxVersion>3.*</em:maxVersion>
-        <em:updateURL>http://127.0.0.1/update.rdf</em:updateURL>
-      </Description>
-    </em:targetApplication>
-  </Description>
-</RDF>
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="domintruder@mindedsecurity.com"
+                   em:name="DOMinator"
+                   em:version="0.9.0.1"
+                   em:creator="Stefano Di Paola"
+                   em:type="2"
+                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDpEj+WWXe2tEmynpYQkLtTeHs8nCcOwDDNvCtacP9O7WXVR8IoN8zcGtZVFsq2NDFiobAYldSjdmCoi2+VJsqXHTfJLj0V2gfok466nBNmo9QW3xJieXaVK/IwFX/96qxPHLasAUK1xNHgBFLKBxDXaiYTjxenj6cgJ6108pwLqQIDAQAB">
+    <em:targetApplication RDF:resource="rdf:#$vXxNl2"/>
+    <em:updateURL>https://dominator.googlecode.com/svn/update.rdf</em:updateURL>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$vXxNl2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.5"
+                   em:maxVersion="3.6.*"
+                   />
+</RDF:RDF>
