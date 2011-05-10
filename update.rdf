@@ -9,7 +9,7 @@
                    em:updateLink="http://dominator.googlecode.com/files/dominator-0.9.0.3.xpi"
                    em:updateHash="sha1:2117fa9e734b6011da7e8177abf4b4690f40e361" />
   <RDF:Description RDF:about="urn:mozilla:extension:domintruder@mindedsecurity.com"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBACe95dxH0iohe3Ls4gtjGvqxkbs845Guk+FDZJbAedZFZcbFUsyFGGyZZA8o156GOoy1oJsB3UuC0YG564jl55u7RCkT2DSeTVHOSw50Kjg1bfSAcUK/45FKpwdMjjKfC8U3ey84PJ9MY2wW4+2bmRmf6WRyHBiAcCenjGljRCeh">
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAHV/X0Sr0ruAqqbgvipm1jlsH5qn62HsLHQf6IZVYJB3hbM4cP8KZpKymCWC2zzs4T5f+Jd7aIA/C81Ohuq0CyWJYBD0bhytYiZM+xDLuWRBYur56K5qZPvwNw2bkwYTycATOopEATYTxe5bQ950WMfI5CV4daeOI8rW0D+3wloP">
     <em:updates RDF:resource="rdf:#$FTIqK"/>
   </RDF:Description>
   <RDF:Seq RDF:about="rdf:#$FTIqK">
