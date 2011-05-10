@@ -3,11 +3,11 @@
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="rdf:#$GTIqK"
-                   em:version="0.9.0.3">
+                   em:version="0.9.0.4">
     <em:targetApplication RDF:resource="rdf:#$JTIqK"/>
   </RDF:Description>
   <RDF:Description RDF:about="urn:mozilla:extension:domintruder@mindedsecurity.com"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAN4PZNPmWtFLgU2kJkGHjF1mhFhkuhAN3TH5OsEKFs7fWeEGwJ8MB62OCUj+GhejVKpXyXLNjGHru8AzWCiaTNPF4w+8pFBcbfUc1DXfeYfDOFR/Ingxthe24W1sOI5h9I8Y+bNodjn+8txfhM2B2zK9WIz5FJO41ILxrWxaleWu">
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAE90s0UN/3apUv79o8MBkf+sLIJXU01FltYcWUGhKcMt2iavLSA/jCq1cPVIkyKiyJvWZqsPAqztQeLEV5c5xGXhcO+qIY3eppCbBXqECQE6VD2ykczfSIsBm/dhPfeAOibqXe/hocFfvAIth6CrutkkEN8a627tBrYDVzrdwEkK">
     <em:updates RDF:resource="rdf:#$FTIqK"/>
   </RDF:Description>
   <RDF:Description RDF:about="rdf:#$JTIqK"
