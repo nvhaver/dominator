@@ -2,21 +2,21 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="rdf:#$JTIqK"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="3.5"
-                   em:maxVersion="3.6.*"
-                   em:updateLink="http://dominator.googlecode.com/files/dominator-0.9.0.3.xpi"
-                   em:updateHash="sha1:340cf3c6e60488f7c550dfa20e4d8843a9969f7e" />
-  <RDF:Description RDF:about="urn:mozilla:extension:domintruder@mindedsecurity.com"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAOM1h5VMNUOaC4sySjmQrsydahCVQDB/VuMW3+uHwFO/9nlKZamRK3is4ye/d1zmqk5d4UkmlU59AalS0DGhC9giBfebT65K2t9ncgn3BvI9MOuxFV8E6SP0rWbSucLIoshV+Hqx6TN+zzcni/vdDw7hB84wSig8Yj/wcPXQn3i5">
-    <em:updates RDF:resource="rdf:#$FTIqK"/>
-  </RDF:Description>
-  <RDF:Seq RDF:about="rdf:#$FTIqK">
-    <RDF:li RDF:resource="rdf:#$GTIqK"/>
-  </RDF:Seq>
   <RDF:Description RDF:about="rdf:#$GTIqK"
                    em:version="0.9.0.3">
     <em:targetApplication RDF:resource="rdf:#$JTIqK"/>
   </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:extension:domintruder@mindedsecurity.com"
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAN4PZNPmWtFLgU2kJkGHjF1mhFhkuhAN3TH5OsEKFs7fWeEGwJ8MB62OCUj+GhejVKpXyXLNjGHru8AzWCiaTNPF4w+8pFBcbfUc1DXfeYfDOFR/Ingxthe24W1sOI5h9I8Y+bNodjn+8txfhM2B2zK9WIz5FJO41ILxrWxaleWu">
+    <em:updates RDF:resource="rdf:#$FTIqK"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$JTIqK"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="3.5"
+                   em:maxVersion="3.6.*"
+                   em:updateLink="http://dominator.googlecode.com/files/dominator-0.9.0.4.xpi"
+                   em:updateHash="sha1:3baebb949dacd2bf0a3e8e91e21a17da2942e68e" />
+  <RDF:Seq RDF:about="rdf:#$FTIqK">
+    <RDF:li RDF:resource="rdf:#$GTIqK"/>
+  </RDF:Seq>
 </RDF:RDF>
