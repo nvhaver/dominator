@@ -3,10 +3,11 @@
 
 *WARNING:* This is a beta release. Don't install if you don't know what you're doing! If you really want to install it read all the instruction below!
 
- # download Windows (http://www.wisec.it/testDom/XX_win.zip) and/or Linux (http://www.wisec.it/testDom/XX_Lin.zip) version of DOMinator (based on FF 3.6.13). If you have a *MacOSX* there no version yet, sorry.
- # unzip the zip with the password  4dd4457b-aed9-4ab4-8472-2a4b07656ff4 and save it in a directory: Ex *DOMinatorBin*.
+ # download [ Windows] and/or [ Linux] version of DOMinator (based on FF 3.6.13). If you have a *MacOSX* there no version yet, sorry.
+ # unzip the compressed file
+ # Read the README.txt file.
 {{{
-  a If linux: Enter in the DOMinatorBin directory and launch:
+  a If linux: Enter in the DOMinator directory and launch:
       ./firefox -P DOMinatorProfile -NO-REMOTE 
       this will create a new profile.
   b. if Windows create a link named DOMinator containing 
@@ -14,17 +15,20 @@
       and double click it.
 }}}
  # install at least [https://addons.mozilla.org/en-us/firefox/addon/firebug/versions/?page=1#version-1.6.2 Firebug] (v 1.6.2) (I use also web developer and Firecookie).
- # Download and install the Dominator [http://code.google.com/p/dominator/downloads/detail?name=dominator-0.9.0.1.xpi&can=2&q= Extension].
+ # Install the DOMinator [http://code.google.com/p/dominator/downloads/detail?name=dominator-0.9.0.1.xpi&can=2&q= Extension] (already shipped with the package).
  # open Firebug and set it "On" on any page. 
- # Have a look at the attached image. 
+ # Watch the [http://www.youtube.com/watch?v=f_It469LUFM video] to understand how it works.
  # go for example to http://www.aol.com or http://www.leboncoin.fr/  and see what it says.
- # Remember that since Firefox sets the default profile as the last one, the default one will always be launched using (*all the Firefox links must be updated with the previous arguments*):
+ # Remember that since Firefox sets the default profile as the last one, the default one will always be launched using (*all the previous Firefox links must be updated with the -P profile arguments*):
 {{{
 firefox -P default -NO-REMOTE
 }}}
  # Read the [http://code.google.com/p/dominator/downloads/detail?name=DOMinator_Control_Flow.pdf&can=2&q= pdf] document for architecture description.
- # See the troubleshooting page for minimal recovering if you did some error.
-
+ # See the issues page for minimal recovering if you did some error.
+ # Subscribe to DOMinator Mailing [https://groups.google.com/forum/#!forum/dominator-ml List]
 As a side note consider that there are still some issues I hope to fix,
 like doing some kind of rebranding to solve those -P issues on original
 firefox.
+
+
+If you are curious about the implementation have a look at the diff file.
