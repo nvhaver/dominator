@@ -3,7 +3,9 @@
 
 *WARNING:* This is a beta release. Don't install if you don't know what you're doing! If you really want to install it read all the instruction below!
 
- # download [ Windows] and/or [ Linux] version of DOMinator (based on FF 3.6.13). If you have a *MacOSX* there no version yet, sorry.
+*UPDATE:* there's an open [http://code.google.com/p/dominator/issues/detail?id=4 issue] about using DOMinator under Win 64Bit. If you have windows 64bit it's suggested to use the Linux version in a VM environment.
+
+ # download [ Windows] and/or [ Linux] version of DOMinator (based on FF 3.6.13). If you have a *MacOSX* there no version yet, sorry. 
  # unzip the compressed file
  # Read the README.txt file.
 {{{
