@@ -8,11 +8,9 @@ more resources you give to the VM the best DOMinator will run.
 
 You can download it from here:
  * http://sourceforge.net/projects/dominatorva/files/ (Official Home)
- * http://dl.dropbox.com/u/10457180/DOMinator.ova (Mirrored by [www.disenchant.ch Sven Vetsch])
+ * http://dl.dropbox.com/u/10457180/DOMinator.ova (Mirrored by [http://www.disenchant.ch Sven Vetsch])
 
 {{{
 sha1: 182e03e95f016ee143762b49d866d07b6245cfea
 md5:  34957fb64c1874bf8664e89d98dc44cc
 }}}
-
-
