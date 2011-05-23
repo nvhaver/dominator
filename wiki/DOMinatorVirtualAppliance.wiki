@@ -26,3 +26,6 @@ md5:  34957fb64c1874bf8664e89d98dc44cc
  # Adapt the Virtual Appliance settings to your needs
  # Launch the VA
  # Read the README file on DOMinatorVA desktop
+ # Click on the DOMinator icon on the desktop to launch it.
+ # Enjoy
+ # Feedback/Suggestions/Criticism are always welcome!
