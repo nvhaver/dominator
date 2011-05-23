@@ -22,7 +22,7 @@ md5:  34957fb64c1874bf8664e89d98dc44cc
 
  # Install VirtualBox.
  # Double click on the DOMinator.ova
- # Follow the instruction
- # Adapt the Virtual Appliance settings to ou needs
+ # Follow the instructions
+ # Adapt the Virtual Appliance settings to your needs
  # Launch the VA
- # Read the README file on desktop
+ # Read the README file on DOMinatorVA desktop
