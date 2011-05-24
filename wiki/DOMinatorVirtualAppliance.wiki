@@ -12,7 +12,7 @@ You can download it from here:
  * http://sourceforge.net/projects/dominatorva/files/ (Official Home)
  * http://dl.dropbox.com/u/10457180/DOMinator.ova (Mirrored by [http://www.disenchant.ch Sven Vetsch])
  * https://heideri.ch/DOMinator.ova (Mirrored by [https://heideri.ch/ Mario Heiderich])
- * http://dominator.dragonsfiles.com/ (Mirrored by [http://www.dragonfiles.com @DFtfh])
+ * http://dominator.dragonsfiles.com/ (Mirrored by [http://www.dragonsfiles.com @DFtfh])
 
 {{{
 sha1: 182e03e95f016ee143762b49d866d07b6245cfea
