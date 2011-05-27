@@ -19,6 +19,7 @@
  # install at least [https://addons.mozilla.org/en-us/firefox/addon/firebug/versions/?page=1#version-1.6.2 Firebug] (v 1.6.2) (I use also web developer and Firecookie).
  # Install the DOMinator [http://code.google.com/p/dominator/downloads/detail?name=dominator-0.9.0.1.xpi&can=2&q= Extension] (already shipped with the package).
  # open Firebug and set it "On" on any page. 
+ # set Enable all Panels on Firebug (or at least the script panel). This is needed for stack trace feature to work.
  # Watch the [http://www.youtube.com/watch?v=f_It469LUFM video] to understand how it works.
  # go for example to http://www.aol.com or http://www.leboncoin.fr/  and see what it says.
  # Remember that since Firefox sets the default profile as the last one, the default one will always be launched using (*all the previous Firefox links must be updated with the -P profile arguments*):
