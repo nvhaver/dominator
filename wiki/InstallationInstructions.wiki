@@ -1,11 +1,11 @@
 #labels Install
-==What to do to install DOMinator==
+==How to install DOMinator==
 
 *WARNING:* This is a beta release. Don't install if you don't know what you're doing! If you really want to install it read all the instruction below!
 
 *UPDATE:* there's an open [http://code.google.com/p/dominator/issues/detail?id=4 issue] about using DOMinator under Win 64Bit. If you have windows 64bit it's suggested to use the Linux version in a VM environment.
 
- # download [ Windows] and/or [ Linux] version of DOMinator (based on FF 3.6.13). If you have a *MacOSX* there no version yet, sorry. 
+ # DOMinator is not just an extension, *it is a modified version of Firefox 3.6.13*, so be sure to download [http://code.google.com/p/dominator/downloads/detail?name=DOMinator_firefox_3.6.13_Windows_32Bit.zip&can=2&q= Windows] and/or [http://code.google.com/p/dominator/downloads/detail?name=DOMinator_firefox_3.6.13_Linux_32Bit.tgz&can=2&q= Linux] version of DOMinator. If you have a *MacOSX* there no version yet, sorry. If you still want to try it you can still [[http://code.google.com/p/dominator/wiki/DOMinatorVirtualAppliance download] the [https://www.virtualbox.org/ Virtualbox] image.
  # unzip the compressed file
  # Read the README.txt file.
 {{{
