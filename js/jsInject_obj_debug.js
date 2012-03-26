@@ -862,8 +862,11 @@ __domIntruderObj._domIntruderDebugDom = {
                           } 
                        }, 
                        set href(newval){ 
-                               if(newval.tainted)
+                               if(newval.tainted){
                                  __domIntruderObj.__domIntruderui.log("Setter","location.href", newval, __domIntruderObj._domIntruderUtil.getCallStack(arguments));
+                                 if(!confirm("location href set on tainted value\nwant to proceed?"))
+                                       return;              
+                               }
                                a.href=newval;
                           },
                        get hash(){
@@ -961,8 +964,11 @@ __domIntruderObj._domIntruderDebugDom = {
                location getter=locGetter;
                document.location getter=locGetter;
                function locSetter(newval){
-                  if(newval.tainted)
+                  if(newval.tainted){
                      __domIntruderObj.__domIntruderui.log("Sink","location", newval, __domIntruderObj._domIntruderUtil.getCallStack(arguments));
+                     if(!confirm("location set on tainted value\nwant to proceed?"))
+                      return; 
+                  }
                   location setter=locSetter;
                   location getter=locGetter;
                   Components.lookupMethod(Components.lookupMethod(window,"location")(),"href")(newval)
